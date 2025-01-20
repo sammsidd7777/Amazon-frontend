@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Document</title>
+    <link rel="stylesheet" href="amazon.css" />
+
+    <style></style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmQuXUZ_EZ_5_GKTPuPeENqsJ5X4Yak3d-R8I0Ja25JQ&s"
+          alt=""
+          style="height: 59%; width: 83%"
+        />
+      </div>
+
+      <div class="location">
+        <p>Delivering to</p>
+        <h3><i class="fa-solid fa-location-dot"></i> &nbsp; Noida up 16</h3>
+      </div>
+
+      <div class="search">
+        <div class="all">All</div>
+        <input type="search" placeholder="Search Amazon.in" />
+        <div class="icon"><i class="fa-solid fa-magnifying-glass" style="font-size: 18px;"></i></div>
+      </div>
+
+      <div class="en">
+        <img
+          src="data:image/png;base64,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"
+          alt=""
+        />EN
+      </div>
+
+      <div class="list">
+        <p>hello, sign in</p>
+        <h3>Account & lists</h3>
+      </div>
+
+      <div class="order">
+        <p>return</p>
+        <h3>& Order</h3>
+      </div>
+
+      <div class="icon"><i class="fa-solid fa-cart-shopping"></i>Cart</div>
+    </header>
+    <div class="box">
+      <div class="menu">
+        <p>All</p>
+        <p>fresh</p>
+        <p>amazon bussines</p>
+        <p>amazon minitv</p>
+        <p>sell</p>
+        <p>Amazon pay</p>
+        <p>fashion</p>
+        <p>gift cards</p>
+        <p>Buy agains</p>
+        <p>today deals</p>
+        <p>browing</p>
+        <p>browing history</p>
+      </div>
+
+      <div class="menu2">
+        <p>new launches from mobiles, electoin & more | shop now</p>
+      </div>
+    </div>
+
+    <div class="backgruand"></div>
+
+    <div class="body" >
+      <div class="line">
+        <div class="box1">
+          <h1>Pick up where you left off</h1>
+
+          <div class="upper">
+            <div class="one">
+              <img
+                src="https://m.media-amazon.com/images/I/717JX3femML._AC_SY110_.jpg"
+                alt=""
+              />
+              <p>OnePlus</p>
+            </div>
+            <div class="two">
+              <img
+                src="https://m.media-amazon.com/images/I/71eUalmgmkL._AC_SY110_.jpg"
+                alt=""
+              />
+              <p>HONOR</p>
+            </div>
+          </div>
+          <div class="lower">
+            <div class="one">
+              <img
+                src="https://m.media-amazon.com/images/I/61m1IW20eJL._AC_SY110_.jpg"
+                alt=""
+              />
+              <p>RIGGEAR</p>
+            </div>
+
+            <div class="two">
+              <img
+                src="https://m.media-amazon.com/images/I/61QnjOitrCL._AC_SY110_.jpg"
+                alt=""
+              />
+              <p>TheGiftKart</p>
+            </div>
+          </div>
+
+          <a href="">see more</a>
+        </div>
+
+        <div class="box1">
+          <h1>Deals on keyboard, mouse & more</h1>
+
+          <div class="upper">
+            <div class="one">
+              <img
+                src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/pcacc/gw/pcmso/KB1x._SY116_CB581434399_.png"
+                alt=""
+              />
+              <p>Keyboards Starting ₹199</p>
+            </div>
+            <div class="two">
+              <img
+                src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/pcacc/gw/pcmso/Mouse1x._SY116_CB581434399_.png"
+                alt=""
+              />
+              <p>starting at 99</p>
+            </div>
+          </div>
+          <div class="lower">
+            <div class="one">
+              <img
+                src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/pcacc/gw/pcmso/HP1x._SY116_CB581434399_.png"
+                alt=""
+              />
+              <p>Headphone</p>
+            </div>
+
+            <div class="two">
+              <img
+                src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/pcacc/gw/pcmso/BAG1x._SY116_CB581434399_.png"
+                alt=""
+              />
+              <p>Laptop beg</p>
+            </div>
+          </div>
+
+          <a href="">Explore more</a>
+        </div>
+        <div class="box1">
+          <h1>Revamp your home in style</h1>
+
+          <div class="upper">
+            <div class="one">
+              <img
+                src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2024/Gateway/BTFGW/PCQC/186x116_Home_furnishings_2._SY116_CB584596691_.jpg"
+                alt=""
+              />
+              <p>Cusion cover ,bed sheet</p>
+            </div>
+            <div class="two">
+              <img
+                src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2024/Gateway/BTFGW/PCQC/186x116_Home_decor_1._SY116_CB584596691_.jpg"
+                alt=""
+              />
+              <p>Figurince, vases and more</p>
+            </div>
+          </div>
+          <div class="lower">
+            <div class="one">
+              <img
+                src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2024/Gateway/BTFGW/PCQC/186x116_Home_storage_1._SY116_CB584596691_.jpg"
+                alt=""
+              />
+              <p>Home storege</p>
+            </div>
+
+            <div class="two">
+              <img
+                src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2024/Gateway/BTFGW/PCQC/186x116_Home_lighting_2._SY116_CB584596691_.jpg"
+                alt=""
+              />
+              <p>Lighting solutions</p>
+            </div>
+          </div>
+
+          <a href="">Explore all</a>
+        </div>
+        <div class="box1">
+          <h1>Today top selling</h1>
+
+          <div class="upper">
+            <div class="one">
+              <img
+                src="https://m.media-amazon.com/images/I/41kTcMWsiOL._AC_SY200_.jpg"
+                alt=""
+              />
+              <p>OnePlus</p>
+            </div>
+            <div class="two">
+              <img
+                src="https://m.media-amazon.com/images/I/41U0KBNRk5L._AC_SY200_.jpg"
+                alt=""
+              />
+              <p>HONOR</p>
+            </div>
+          </div>
+          <div class="lower">
+            <div class="one">
+              <img
+                src="https://m.media-amazon.com/images/I/41kTcMWsiOL._AC_SY200_.jpg"
+                alt=""
+              />
+              <p>RIGGEAR</p>
+            </div>
+
+            <div class="two">
+              <img
+                src="https://m.media-amazon.com/images/I/41U0KBNRk5L._AC_SY200_.jpg"
+                alt=""
+              />
+              <p>TheGiftKart</p>
+            </div>
+          </div>
+
+          <a href="">see more</a>
+        </div>
+      </div>
+
+      <div class="line2">
+        <div class="one"> <img src="https://m.media-amazon.com/images/S/pv-target-images/bbf6bf4d7c338c0c85904685bec4caafb789d987bc2c07bf5d88d3f8153f03b1._AC_SL792_.jpg" alt=""></div>
+     
+        <div class="box1">
+          <h1>Top mobile accessories for your smartphone</h1>
+
+          <div class="upper">
+
+            <div class="one">
+              <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/WLA/2023/MSOREFRESHDESKTOP/D87165616_IN_WLA_BAU_MSO_REFRESH-desktop-version_PC_QuadCard_186X116_3X3._SY116_CB602731451_.jpg" alt="">
+          
+              <p>Headsets</p>
+            </div>
+            <div class="two">
+              <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/WLA/2023/MSOREFRESHDESKTOP/D87165616_IN_WLA_BAU_MSO_REFRESH-desktop-version_PC_QuadCard_186X116_2X2._SY116_CB602731451_.jpg" alt="">
+          
+              
+              <p>Cable and charder</p>
+            </div>
+          </div>
+           
+          <div class="upper">
+
+            <div class="one">
+              <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/WLA/2023/MSOREFRESHDESKTOP/D87165616_IN_WLA_BAU_MSO_REFRESH-desktop-version_PC_QuadCard_186X116_3X3._SY116_CB602731451_.jpg" alt="">
+          
+              <p>Headsets</p>
+            </div>
+            <div class="two">
+              <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/WLA/2023/MSOREFRESHDESKTOP/D87165616_IN_WLA_BAU_MSO_REFRESH-desktop-version_PC_QuadCard_186X116_2X2._SY116_CB602731451_.jpg" alt="">
+          
+              
+              <p>Cable and charder</p>
+            </div>
+          </div>
+             
+
+
+
+           
+            <a href="">See more offer</a>
+
+        </div>
+
+
+        <div class="box1">
+          <h1>Top mobile accessories for your smartphone</h1>
+
+          <div class="upper">
+
+            <div class="one">
+              <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/WLA/2023/MSOREFRESHDESKTOP/D87165616_IN_WLA_BAU_MSO_REFRESH-desktop-version_PC_QuadCard_186X116_3X3._SY116_CB602731451_.jpg" alt="">
+          
+              <p>Headsets</p>
+            </div>
+            <div class="two">
+              <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/WLA/2023/MSOREFRESHDESKTOP/D87165616_IN_WLA_BAU_MSO_REFRESH-desktop-version_PC_QuadCard_186X116_3X3._SY116_CB602731451_.jpg" alt="">
+          
+              
+              <p>Cable and charder</p>
+            </div>
+          </div>
+           
+          <div class="upper">
+
+            <div class="one">
+              <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/WLA/2023/MSOREFRESHDESKTOP/D87165616_IN_WLA_BAU_MSO_REFRESH-desktop-version_PC_QuadCard_186X116_4X4._SY116_CB602731451_.jpg" alt="">
+          
+              <p>Headsets</p>
+            </div>
+            <div class="two">
+              <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/WLA/2023/MSOREFRESHDESKTOP/D87165616_IN_WLA_BAU_MSO_REFRESH-desktop-version_PC_QuadCard_186X116_4X4._SY116_CB602731451_.jpg" alt="">
+          
+              
+              <p>Cable and charder</p>
+            </div>
+          </div>
+             
+
+
+
+           
+            <a href="">See more offer</a>
+
+        </div>
+     
+
+        
+     <div class="line3">
+
+      <div class="box">
+        <h1>Best selling headphone start at $ 9.9
+        </h1>
+        <img src="https://m.media-amazon.com/images/I/41BoLKMYjnL._AC_UL480_FMwebp_QL65_.jpg" alt="">
+
+
+
+        <a href="">Shop now</a>
+
+
+
+      </div>
+
+      <div class="box">
+        <h1>Best selling bluetooth start at $ 9.9
+        </h1>
+        <img src="https://m.media-amazon.com/images/I/61ZEQXGTepL._AC_UL480_FMwebp_QL65_.jpg" alt="">
+
+
+
+        <a href="">Shop now</a>
+
+
+
+      </div>
+
+      <div class="box">
+        <h1>Best selling headphone start at $ 9.9
+        </h1>
+        <img src="https://m.media-amazon.com/images/I/819GfPP8LHL._AC_UL480_FMwebp_QL65_.jpg" alt="">
+
+
+
+        <a href="">Shop now</a>
+
+
+
+      </div>
+
+      <div class="box">
+        <h1>Best selling headphone start at $ 9.9
+        </h1>
+        <img src="https://m.media-amazon.com/images/I/61b8STGCCxL._AC_UL480_FMwebp_QL65_.jpg" alt="">
+        <a href="">Shop now</a>
+      </div>
+     </div>
+     
+     
+         <div class="line4">
+            <div class="head"><h3 style="color: black;margin-left: 10px;">Todays Deals</h3> 
+              
+              <a href="">See all deals</a></div>
+
+
+              
+         <div class="slid">
+
+          <div class="box"><img src="https://m.media-amazon.com/images/I/41E9yKqrXoL._AC_SY200_.jpg" alt="">
+            <h5>
+           <p><a href="" style="padding: 5px 7px 5px 7px;color:white;background-color: red;font-size: 11px;">up to 30% off</a> <a href=""  style="padding: 5px 7px 5px 7px;color:rgb(255, 2, 2);background-color: rgb(249, 247, 247);font-size: 11px;">Limeted time deal</a> </p> 
+
+           <p style="color: black;">
+            iQOO Neo9 ProiQOO </p> </h5>
+          
+          
+          
+          
+          </div>
+
+          <div class="box"><img src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/CE/HP2/Boat_Pc_CC_1x._SY304_CB596084660_.jpg" alt="">
+            <h5>
+           <p><a href="" style="padding: 5px 7px 5px 7px;color:white;background-color: red;font-size: 11px;">up to 30% off</a> <a href=""  style="padding: 5px 7px 5px 7px;color:rgb(255, 2, 2);background-color: rgb(249, 247, 247);font-size: 11px;">Limeted time deal</a> </p> 
+
+           <p style="color: black;">
+            iQOO Neo9 ProiQOO </p> </h5>
+          
+          
+          
+          
+          </div>
+          <div class="box"><img src="https://m.media-amazon.com/images/I/41m-C1HHkIL._AC_SY200_.jpg" alt="">
+            <h5>
+           <p><a href="" style="padding: 5px 7px 5px 7px;color:white;background-color: red;font-size: 11px;">up to 30% off</a> <a href=""  style="padding: 5px 7px 5px 7px;color:rgb(255, 2, 2);background-color: rgb(249, 247, 247);font-size: 11px;">Limeted time deal</a> </p> 
+
+           <p style="color: black;">
+            iQOO Neo9 ProiQOO </p> </h5>
+          
+          
+          
+          
+          </div>
+          <div class="box"><img src="https://m.media-amazon.com/images/I/612AVBd3klL._AC_UY327_FMwebp_QL65_.jpg" alt="">
+            <h5>
+           <p><a href="" style="padding: 5px 7px 5px 7px;color:white;background-color: red;font-size: 11px;">up to 30% off</a> <a href=""  style="padding: 5px 7px 5px 7px;color:rgb(255, 2, 2);background-color: rgb(249, 247, 247);font-size: 11px;">Limeted time deal</a> </p> 
+
+           <p style="color: black;">
+           tenco spark  </p> </h5>
+          
+          
+          
+          
+          </div>
+          <div class="box"><img src="https://m.media-amazon.com/images/I/51G+UDiRqGL._AC_UY327_FMwebp_QL65_.jpg" alt="">
+            <h5>
+           <p><a href="" style="padding: 5px 7px 5px 7px;color:white;background-color: red;font-size: 11px;">up to 30% off</a> <a href=""  style="padding: 5px 7px 5px 7px;color:rgb(255, 2, 2);background-color: rgb(249, 247, 247);font-size: 11px;">Limeted time deal</a> </p> 
+
+           <p style="color: black;">
+            i phone 18 </p> </h5>
+          
+          
+          
+          
+          </div>
+          <div class="box"><img src="https://m.media-amazon.com/images/I/61pHI30UcpL._SL1280_.jpg" alt="">
+            <h5>
+           <p><a href="" style="padding: 5px 7px 5px 7px;color:white;background-color: red;font-size: 11px;">up to 30% off</a> <a href=""  style="padding: 5px 7px 5px 7px;color:rgb(255, 2, 2);background-color: rgb(249, 247, 247);font-size: 11px;">Limeted time deal</a> </p> 
+
+           <p style="color: black;">
+             saree </p> </h5>
+          
+          
+          
+          
+          </div>
+
+
+
+
+
+
+         </div>
+
+
+
+         </div>
+        
+
+
+
+         <div class="line4" style="position: absolute;margin-top: 1250px;">
+          <div class="head"><h3 style="color: black;margin-left: 10px;">Best Deals</h3> 
+            
+            <a href="">See all </a></div>
+
+
+            
+       <div class="slid">
+
+        <div class="box"><img src="https://m.media-amazon.com/images/I/41E9yKqrXoL._AC_SY200_.jpg" alt="">
+          <h5>
+         <p><a href="" style="padding: 5px 7px 5px 7px;color:white;background-color: red;font-size: 11px;">up to 80% off</a> <a href=""  style="padding: 5px 7px 5px 7px;color:rgb(255, 2, 2);background-color: rgb(249, 247, 247);font-size: 11px;">Limeted time deal</a> </p> 
+
+         <p style="color: black;">
+         Cotton saree </p> </h5>
+        
+        
+        
+        
+        </div>
+
+        <div class="box"><img src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/CE/HP2/Boat_Pc_CC_1x._SY304_CB596084660_.jpg" alt="">
+          <h5>
+         <p><a href="" style="padding: 5px 7px 5px 7px;color:white;background-color: red;font-size: 11px;">up to 50% off</a> <a href=""  style="padding: 5px 7px 5px 7px;color:rgb(255, 2, 2);background-color: rgb(249, 247, 247);font-size: 11px;">Limeted time deal</a> </p> 
+
+         <p style="color: black;"> bout bluetooth
+          </p> </h5>
+        
+        
+        
+        
+        </div>
+        <div class="box"><img src="https://m.media-amazon.com/images/I/41m-C1HHkIL._AC_SY200_.jpg" alt="">
+          <h5>
+         <p><a href="" style="padding: 5px 7px 5px 7px;color:white;background-color: red;font-size: 11px;">up to 40% off</a> <a href=""  style="padding: 5px 7px 5px 7px;color:rgb(255, 2, 2);background-color: rgb(249, 247, 247);font-size: 11px;">Limeted time deal</a> </p> 
+
+         <p style="color: black;">
+         Android phones </p> </h5>
+        
+        
+        
+        
+        </div>
+        <div class="box"><img src="https://m.media-amazon.com/images/I/612AVBd3klL._AC_UY327_FMwebp_QL65_.jpg" alt="">
+          <h5>
+         <p><a href="" style="padding: 5px 7px 5px 7px;color:white;background-color: red;font-size: 11px;">up to 90% off</a> <a href=""  style="padding: 5px 7px 5px 7px;color:rgb(255, 2, 2);background-color: rgb(249, 247, 247);font-size: 11px;">Limeted time deal</a> </p> 
+
+         <p style="color: black;">
+         Tecno spark </p> </h5>
+        
+        
+        
+        
+        </div>
+        <div class="box"><img src="https://m.media-amazon.com/images/I/51G+UDiRqGL._AC_UY327_FMwebp_QL65_.jpg" alt="">
+          <h5>
+         <p><a href="" style="padding: 5px 7px 5px 7px;color:white;background-color: red;font-size: 11px;">up to 39% off</a> <a href=""  style="padding: 5px 7px 5px 7px;color:rgb(255, 2, 2);background-color: rgb(249, 247, 247);font-size: 11px;">Limeted time deal</a> </p> 
+
+         <p style="color: black;"> Iphone 5
+          </p> </h5>
+        
+        
+        
+        
+        </div>
+        <div class="box"><img src="https://m.media-amazon.com/images/I/61pHI30UcpL._SL1280_.jpg" alt="">
+          <h5>
+         <p><a href="" style="padding: 5px 7px 5px 7px;color:white;background-color: red;font-size: 11px;">up to 50% off</a> <a href=""  style="padding: 5px 7px 5px 7px;color:rgb(255, 2, 2);background-color: rgb(249, 247, 247);font-size: 11px;">Limeted time deal</a> </p> 
+
+         <p style="color: black;">
+         Girls dress </p> </h5>
+        
+        
+        
+        
+        </div>
+
+
+
+
+
+
+       </div>
+
+
+
+       </div>
+     
+
+       <div class="line5">
+        <div class="head">More iteam  <a href="">see moreee</a></div>
+
+        <
+        <div class="iteam">
+          <img src="https://m.media-amazon.com/images/I/71nvkHnPpZL._AC_UY327_FMwebp_QL65_.jpg" alt="">
+          <img src="https://m.media-amazon.com/images/I/31reJbshTLL._SY445_SX342_QL70_FMwebp_.jpg" alt="">
+          <img src="https://m.media-amazon.com/images/I/41Z2qXLp+lL._SX342_SY445_.jpg" alt="">
+          <img src="https://m.media-amazon.com/images/I/71qZERyxy6L._AC_SY200_.jpg" alt="">
+          <img src="https://m.media-amazon.com/images/I/81CgtwSII3L._AC_UY327_FMwebp_QL65_.jpg" alt="">
+          <img src="https://m.media-amazon.com/images/I/71PjpS59XLL._AC_UY327_FMwebp_QL65_.jpg" alt="">
+         
+          <img src="https://m.media-amazon.com/images/I/710Y-NFojSL._AC_UY327_FMwebp_QL65_.jpg" alt="">
+
+
+        </div>
+
+
+
+
+
+
+       </div>
+     
+     
+     <div class="line6">
+      <div class="head">You might also like</div>
+
+      <div class="iteam">
+        <img src="https://m.media-amazon.com/images/I/71EBC4wo37L._AC_SY200_.jpg" alt="">
+        <img src="https://m.media-amazon.com/images/I/81ltxUloU9L._AC_SY200_.jpg" alt="">
+        <img src="https://m.media-amazon.com/images/I/81FJVLfEwWL._AC_SY200_.jpg" alt="">
+        <img src="https://m.media-amazon.com/images/I/61gxJsI7JGL._AC_SY200_.jpg" alt="">
+        <img src="https://m.media-amazon.com/images/I/71ZqyTl78aL._AC_SY200_.jpg" alt="">
+
+        <img src="https://m.media-amazon.com/images/I/71SHu6WWTEL._AC_SY200_.jpg" alt="">
+        
+        <img src="https://m.media-amazon.com/images/I/71SJb6U15OL._AC_SY200_.jpg" alt="">
+      
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      
+
+
+
+     </div>
+     
+     <div class="backtop">Back to top</div>
+     <div class="medail">
+
+      <div class="one">
+       <p> Get to Know Us </p>
+     <a href="">   About Us</a>
+    <a href="">    Careers</a>
+    <a href="">  Press Releases</a>
+     <a href="">   Amazon Science</a>
+
+
+      </div>
+
+      <div class="two"> 	
+       <p> Connect with Us</p>
+       <a href=""> Facebook</a>
+      
+       <a href=""> Twitter</a>
+       <a href=""> Instagram</a>
+      
+
+
+      </div>
+
+      <div class="three"> 	
+        <p>  Make Money with Us</p>
+             <a href="">  Sell on Amazon</a>
+            <a href="">  Sell under Amazon Accelerator</a>
+            <a href="">  Protect and Build Your Brand</a>
+           <a href="">  Amazon Global Selling</a>
+           <a href="">  Become an Affiliate</a>
+           <a href="">  Fulfilment by Amazon</a>
+           <a href="">  Advertise Your Products</a>
+           <a href="">  Amazon Pay on Merchants</a>
+
+
+      </div>
+
+
+      <div class="four">  	
+               <p> Let Us Help You</p>
+              <a href="">  COVID-19 and Amazon</a>
+              <a href="">  Your Account</a>
+              <a href="">  Returns Centre</a>
+             <a href="">  100% Purchase Protection</a>
+             <a href="">  Amazon App Download</a>
+              <a href="">  Help</a>
+
+
+
+
+
+
+
+
+
+
+      </div>
+
+
+
+
+     </div>
+     
+     <div class="country">
+
+      <div class="logo">
+
+        <img src="Amazon-Logo-White-PNG-Image.png" alt="" b>
+
+        <p><i class="fa-solid fa-globe"></i> English <i class="fa-solid fa-up-down"></i></p>
+
+
+
+
+
+      </div>
+
+
+      <div class="place">
+      <a href=""> Australia  </a>
+      <a href="">  Canada  </a>
+      <a href="">  Brazil  </a>
+      <a href="">  China  </a>
+      <a href=""> France  </a>
+      <a href="">  Germany  </a>
+      <a href="">  Italy  </a>
+      <a href="">  Japan  </a>
+     <a href="">  Mexico  </a>
+      <a href="">  Netherlands  </a>
+      <a href="">  Poland  </a>
+       <a href=""> Singapore  </a>
+      <a href="">  Spain  </a>
+       <a href=""> Turkey</a>
+        <a href=""> Turkey</a>
+      <a href="">  United Arab Emirates  </a>
+
+      </div>
+
+     </div>
+     
+     <div class="end" >
+
+      <div class="upper">
+
+       <div class="top">
+        <div class="one">
+
+          
+      <a href=""style="font-size: 12px; color: white; font-weight: 600;padding: 10px 0px;text-transform: uppercase;">  AbeBooks</a>
+      <a href="">  Books, art</a>
+      <a href="">  & collectibles</a>
+        </div>
+
+        <div class="two">
+
+          <a href=""style="font-size: 12px; color: white; font-weight: 600;padding: 10px 0px;text-transform: uppercase;">Amazon web service</a>
+          <a href="">Scalable Cloud</a>
+          <a href="">Computing service</a>
+        </div>
+
+        <div class="three">
+          <a href=""style="font-size: 12px; color: white; font-weight: 600;padding: 10px 0px;text-transform: uppercase;">Audible</a>
+          <a href="">dowload</a>
+          <a href="">audio book</a>
+        </div>
+
+        <div class="four"><a href=""style="font-size: 12px; color: white; font-weight: 600;padding: 10px 0px;text-transform: uppercase;">IMBD</a
+          >
+          <a href="">movies .tv</a>
+          <a href="">& celebrities</a>
+
+
+        </div>
+
+
+
+
+       </div>
+
+       <div class="buttom">
+
+        <div class="one">
+
+          
+          <a href="" style="font-size: 12px; color: white; font-weight: 600;padding: 10px 0px;text-transform: uppercase;">  shopbop</a>
+          <a href="">  designer</a>
+          <a href=""> fashion brands</a>
+            </div>
+    
+            <div class="two" >
+    
+              <a href="" style="font-size: 12px; color: white; font-weight: 600;padding: 10px 0px;text-transform: uppercase;">amazon bussiness</a>
+              <a href="">everthing for</a>
+              <a href="">your bussiness</a>
+            </div>
+    
+            <div class="three">
+              <a href=""style="font-size: 12px; color: white; font-weight: 600;padding: 10px 0px;text-transform: uppercase;">prime now</a>
+              <a href="">2-hour delivery</a>
+              <a href=""> on everyday iteams</a>
+            </div>
+    
+            <div class="four"><a href=""style="font-size: 12px; color: white; font-weight: 600;padding: 10px 0px;text-transform: uppercase;">amazon prime music</a
+              >
+              <a href="">100 millon song, ad-free</a>
+              <a href="">Over 15 millon podcast episode</a>
+    
+    
+            </div>
+       </div>
+
+ 
+
+
+
+
+
+
+      </div>
+
+      
+
+
+
+         
+
+
+
+
+  
+
+
+
+
+
+
+      <div class="down" >
+        <div class="one">
+        <a href="">  Conditions of Use & Sale</a>
+        <a href="">  Privacy Notice</a>
+        <a href="">  Interest-Based Ads</a>
+
+
+
+
+
+        </div>
+
+        <div class="two">
+          <p>© 1996-2024, Amazon.com, Inc. or its affiliates
+
+
+
+          </p>
+
+
+
+        </div>
+
+
+      </div>
+
+
+     </div>
+
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+    </div>
+  </body>
+</html>
